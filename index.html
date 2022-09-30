@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aula 02</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#">
+        <h1 class="logo">Aula 02</h1>
+      </a>
+      <button class="btn-menu">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+
+      <nav class="menu">
+        <a href="" class="btn-close">
+          <i class="fas fa-times fa-lg"></i>
+        </a>
+        <!-- botão para fechar o menu -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Clientes</a></li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Quem somos</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="teste"></div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <script>
+      $('.btn-menu').click(function () {
+        $('.menu').show()
+      })
+    </script>
+  </body>
+</html>
