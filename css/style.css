@@ -272,3 +272,36 @@ a {
       margin-top: 0;
   }
 }
+
+
+/* tablets e desktops */
+@media screen and (min-width: 850px){
+  .title {
+      width: 70%;
+      float: left;
+      text-align: left;
+  }
+
+  .title h2 { font-size: 3em; }
+  .title h3 { font-size: 2em; }
+
+  .buttons {
+      width: 30%;
+      float: right;
+      marginr-top: 0;
+  }
+
+  .servico { width: 32%; }
+  .servico:nth-child(2) { margin-right: 2%; }
+  .servico:nth-child(3) { margin-right: 0; }
+
+  .newsletter input {
+      width: 60%;
+      float: none;
+  }
+
+  .newsletter button {
+      width: 20%;
+      float: none;
+  }
+}
