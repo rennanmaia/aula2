@@ -210,3 +210,27 @@ a {
   border-radius: 5px;
   background-color:#fff;
 }
+
+/* Rodape */
+.rodape {
+  width: 100%;
+  float: left;
+  padding: 3% 4%;
+  text-align: center;
+  background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.socialicons a {
+  font-size: 1.5em;
+  margin-right: 3%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.socialicons a:hover { color: #fff; }
+
+.socialicons a:last-child { margin-right: 0; }
+
+.copyright {
+  margin-top: 2%;
+  color: rgba(255, 255, 255, 0.7);
+}
