@@ -132,3 +132,43 @@ a {
   color: #fff;
   background-color: #130400;
 }
+
+/* Serviços */
+.servicos {
+  width: 100%;
+  float: left;
+  padding: 3% 4%;
+}
+
+.servico {
+  width: 100%;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 3%;
+  background-color: #fff;
+}
+
+.servico img { 
+  border-radius: 7px 7px 0 0; 
+  width: 100%;
+}
+
+.inner { padding: 7%; }
+
+.inner a {
+  font-size: 1.5em;
+  color: #130400;
+  font-weight: 700;
+}
+
+.inner h4 {
+  font-size: 1.2em;
+  color: #130400;
+  margin-top: 2%;
+}
+
+.inner p { 
+  margin-top: 6%;
+  color: #130400;
+  line-height: 1.5em;
+}
