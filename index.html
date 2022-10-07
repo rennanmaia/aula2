@@ -18,12 +18,16 @@
     <title>Aula 02</title>
   </head>
   <body>
-    <header class="cabecalho border">
+    <header id="header" class="cabecalho border">
       <a href="#">
         <h1 class="logo">Aula 02</h1>
       </a>
       <button class="btn-menu">
         <i class="fas fa-bars fa-lg"></i>
+      </button>
+
+      <button class="btn-header">
+        <i class="fa fa-arrow-circle-up"></i>
       </button>
 
       <nav class="menu">
@@ -32,7 +36,7 @@
         </a>
         <!-- botão para fechar o menu -->
         <ul>
-          <li><a href="index.html" class="btn-menu-item">Home</a></li>
+          <li><a href="#header" class="btn-menu-item">Home</a></li>
           <li><a href="#clientes" class="btn-menu-item">Clientes</a></li>
           <li><a href="#servicos" class="btn-menu-item">Serviços</a></li>
           <li><a href="#blog" class="btn-menu-item">Blog</a></li>
@@ -306,6 +310,10 @@
 
       $('.btn-sobre').click(function () {
         window.location = '#quem-somos'
+      })
+
+      $('.btn-header').click(function () {
+        window.location = '#header'
       })
     </script>
   </body>

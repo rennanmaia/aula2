@@ -41,11 +41,23 @@ a {
   /* float: right; */
   position: fixed;
   right: 2%;
-  top: 0;
+  top: 2px;
   color: #fff;
   text-align: center;
   border-radius: 56px;
   background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.btn-header {
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  right: 2%;
+  bottom: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 56px;
+  background: linear-gradient(to right, #ce2e3c, #da6709)
 }
 
 .menu {
