@@ -138,10 +138,36 @@ a {
 .servicos {
   width: 100%;
   float: left;
+  /* padding: 3% 4%; */
+}
+
+.servicos section {
+  display: table;
   padding: 3% 4%;
 }
 
+.servicos h2 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ce2e3c;
+}
+
+#servicos {
+  background-color: #fdb57a;
+}
+
+#quem-somos {
+  background-color:#ce2e3c;
+}
+
+#quem-somos h2 {
+  color: #fff;
+}
+
 .servico {
+  display: table;
   width: 100%;
   text-align: left;
   border-radius: 7px;
@@ -246,13 +272,18 @@ a {
 
 /* tablets */
 @media screen and (min-width: 768px){
+  
+  /* .servicos section {
+    display: block;
+  }
+ */
   .servico {
       width: 49%;
       float: left;
       margin-right: 2%;
   }
 
-  .servico:nth-child(2){
+  .servico:nth-child(2n+1){
       margin-right: 0;
   }
 
@@ -292,9 +323,20 @@ a {
       marginr-top: 0;
   }
 
-  .servico { width: 32%; }
-  .servico:nth-child(2) { margin-right: 2%; }
-  .servico:nth-child(3) { margin-right: 0; }
+  .servico:nth-child(2n+1){
+    margin-right: 2%;
+}
+
+  .servico { 
+    width: 32%; 
+    margin-right: 2%; 
+  }
+  /* .servico:nth-child(2) { margin-right: 2%; } */
+  .servico:nth-child(4) { margin-right: 0; }
+  /* .servico:nth-child(3n){
+    margin-right: 0;
+  } */
+
 
   .newsletter input {
       width: 60%;
