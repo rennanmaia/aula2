@@ -279,7 +279,6 @@ a {
 
 /* Formulário de cadastro */
 .section-cadastro {
-  /* border: 1px solid #000; */
   width: 100%;
 }
 
@@ -289,7 +288,6 @@ a {
 }
 
 .form-cadastro {
-  /* border: 1px solid #000; */
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
@@ -314,9 +312,9 @@ a {
   padding: 10px;
   width: 25%;
   min-width: 120px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   border-radius: 5px;
 }
 
