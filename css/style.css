@@ -38,7 +38,10 @@ a {
 .btn-menu {
   width: 56px;
   height: 56px;
-  float: right;
+  /* float: right; */
+  position: fixed;
+  right: 2%;
+  top: 0;
   color: #fff;
   text-align: center;
   border-radius: 56px;

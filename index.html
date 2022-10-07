@@ -32,12 +32,12 @@
         </a>
         <!-- botão para fechar o menu -->
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Quem somos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="index.html" class="btn-menu-item">Home</a></li>
+          <li><a href="#clientes" class="btn-menu-item">Clientes</a></li>
+          <li><a href="#servicos" class="btn-menu-item">Serviços</a></li>
+          <li><a href="#blog" class="btn-menu-item">Blog</a></li>
+          <li><a href="#quem-somos" class="btn-menu-item">Quem somos</a></li>
+          <li><a href="#newsletter" class="btn-menu-item">Newsletter</a></li>
         </ul>
       </nav>
     </header>
@@ -258,7 +258,7 @@
     </main>
 
     <!-- Newsletter -->
-    <section class="newsletter">
+    <section id="newsletter" class="newsletter">
       <h2>Inscreva-se Agora!</h2>
       <h3>Receba novidades, dicas e muito mais!</h3>
 
@@ -289,6 +289,19 @@
     <script>
       $('.btn-menu').click(function () {
         $('.menu').show()
+      })
+
+      $('.btn-close').click(function () {
+        $('.menu').hide()
+        return false
+      })
+
+      // $('.btn-menu-item').click(function () {
+      //   $('.menu').hide()
+      //   return false
+      // })
+      $('.menu').click(function () {
+        $('.menu').hide()
       })
     </script>
   </body>
