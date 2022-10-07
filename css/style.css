@@ -310,6 +310,7 @@ a {
 
 .form-cadastro .btn-submit {
   background-color: green;
+  color: white;
   padding: 10px;
   width: 25%;
   min-width: 120px;
