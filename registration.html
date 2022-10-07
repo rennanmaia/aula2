@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/icon.png" />
+
+    <title>Aula 02</title>
+  </head>
+  <body>
+    <header id="header" class="cabecalho border">
+      <a href="#">
+        <h1 class="logo">Aula 02</h1>
+      </a>
+      <button class="btn-menu">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+
+      <button class="btn-header">
+        <i class="fa fa-arrow-circle-up"></i>
+      </button>
+
+      <nav class="menu">
+        <a href="" class="btn-close">
+          <i class="fas fa-times fa-lg"></i>
+        </a>
+        <!-- botão para fechar o menu -->
+        <ul>
+          <li><a href="index.html" class="btn-menu-item">Home</a></li>
+          <li>
+            <a href="index.html#clientes" class="btn-menu-item">Clientes</a>
+          </li>
+          <li>
+            <a href="index.html#servicos" class="btn-menu-item">Serviços</a>
+          </li>
+          <li><a href="index.html#blog" class="btn-menu-item">Blog</a></li>
+          <li>
+            <a href="index.html#quem-somos" class="btn-menu-item">Quem somos</a>
+          </li>
+          <li>
+            <a href="index.html#newsletter" class="btn-menu-item">Newsletter</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner">
+      <div class="title">
+        <h2>OUSE INOVAR</h2>
+        <h3>
+          Criamos experiências e estabelecemos ações estratégias que conectam
+          marcas e consumidores
+        </h3>
+      </div>
+
+      <div class="buttons">
+        <button class="btn-sobre">
+          Sobre <i class="fas fa-question-circle"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- conteudo -->
+    <main class="servicos">
+      <!-- seção clientes -->
+      <section class="section-cadastro">
+        <h2>Cadastre-se</h2>
+
+        <div class="form-cadastro">
+          <form>
+            <div class="input-group">
+              <fieldset>
+                <label for="nome">Nome completo:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome..."
+                  size="40"
+                />
+              </fieldset>
+
+              <fieldset>
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Digite seu e-mail..."
+                  size="40"
+                />
+              </fieldset>
+
+              <fieldset>
+                <label for="data_nascimento">Data de nascimento:</label>
+                <input
+                  type="date"
+                  id="data_nascimento"
+                  name="data_nascimento"
+                />
+              </fieldset>
+
+              <input type="submit" value="Cadastrar" class="btn-submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- rodape -->
+    <footer class="rodape">
+      <div class="socialicons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <p class="copyright">
+        Copyright Nodeprop 2016 - Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.js"></script>
+
+    <script>
+      $('.btn-menu').click(function () {
+        $('.menu').show()
+      })
+
+      $('.btn-close').click(function () {
+        $('.menu').hide()
+        return false
+      })
+
+      // $('.btn-menu-item').click(function () {
+      //   $('.menu').hide()
+      //   return false
+      // })
+      $('.menu').click(function () {
+        $('.menu').hide()
+      })
+
+      $('.btn-sobre').click(function () {
+        window.location = 'index.html#quem-somos'
+      })
+
+      $('.btn-header').click(function () {
+        window.location = '#header'
+      })
+    </script>
+  </body>
+</html>
