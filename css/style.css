@@ -195,6 +195,22 @@ a {
   width: 100%;
 }
 
+.artigo-quem-somos {
+  display: table;
+  width: 100%;
+  text-align: left;
+  border: 7px;
+  margin-bottom: 3%;
+  background-color: white;
+  border-radius: 7px 7px 0 0;
+}
+
+.artigo-quem-somos img { 
+  border-radius: 7px 7px 0 0; 
+  width: 100%;
+}
+
+
 .inner { padding: 7%; }
 
 .inner a {
@@ -342,6 +358,12 @@ a {
 
   .servico:nth-child(2n+1){
       margin-right: 0;
+  }
+
+  .artigo-quem-somos {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
   }
 
   .newsletter h2 { font-size: 2em; }
